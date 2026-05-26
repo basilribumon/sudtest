@@ -7,12 +7,12 @@ function App(){
 
 
   return(
-    <div style={{textAlign:"center",marginTop:"50px"}}>
+    <div style={{textAlign:"center"}}>
       <h1>Counter App</h1>
       <h2>{count}</h2>
-      <button onClick={()=>dispatch(increment())}>increment</button>
-      <button onClick={()=>dispatch(decrement())}>decrement</button>
-      <button onClick={()=>dispatch(reset())}>reset</button>
+      <button style={{color:"Green"}} onClick={()=>dispatch(increment())}>increment</button>
+      <button style={{color:"Red"}} onClick={()=>dispatch(decrement())}>decrement</button>
+      <button style={{color:"blue"}} onClick={()=>dispatch(reset())}>reset</button>
 
     </div>
   );
